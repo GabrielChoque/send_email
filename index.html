@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Contraseña por Correo</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+    emailjs.init('qtWNk-4zZkxgDGwYv')
+</script>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Enviar Contraseña</h2>
+        <form id="form">
+            <div class="field">
+                <label for="from_name">Nombre Completo</label>
+                <input type="text" name="from_name" id="from_name" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="field">
+                <label for="message">Contraseña</label>
+                <div class="password-container">
+                    <input type="password" name="message" id="message" placeholder="Ingresa la contraseña">
+                    <span class="toggle-password" id="togglePassword">&#128065;</span> <!-- Ícono de ojo -->
+                </div>
+            </div>
+            <div class="field">
+                <label for="email_id">Correo Electrónico</label>
+                <input type="email" name="email_id" id="email_id" placeholder="Ingresa tu correo">
+            </div>
+            <input type="submit" id="button" value="Enviar Correo">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

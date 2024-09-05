@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf4ea; /* Verde claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: #ffffff; /* Blanco para el contenedor del formulario */
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 128, 0, 0.1); /* Sombra verde suave */
+    max-width: 400px;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2e8b57; /* Verde mar */
+}
+
+.field {
+    margin-bottom: 20px;
+}
+
+.field label {
+    display: block;
+    font-size: 14px;
+    color: #228b22; /* Verde bosque */
+    margin-bottom: 5px;
+}
+
+.field input[type="text"],
+.field input[type="email"],
+.field input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #98fb98; /* Verde pálido */
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.field input[type="text"]:focus,
+.field input[type="email"]:focus,
+.field input[type="password"]:focus {
+    border-color: #2e8b57; /* Verde mar oscuro al enfocar */
+    outline: none;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-container .toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #228b22; /* Verde bosque para el ícono */
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4caf50; /* Verde fuerte */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #388e3c; /* Verde más oscuro */
+}
